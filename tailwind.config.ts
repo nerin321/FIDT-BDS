@@ -36,6 +36,7 @@ const config: Config = {
       textColor: {
         title: "#262323",
         desc: "#776F6F",
+        adress: "#D3CFCF",
       },
     },
   },

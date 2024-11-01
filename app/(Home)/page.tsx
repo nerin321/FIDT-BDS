@@ -94,7 +94,7 @@ export default function Home() {
           </div>
         </section>
       </article>
-      <article className=" px-4 py-10">
+      <article className=" px-4 py-10 space-y-14">
         <section className="lg:grid-cols-2 gap-7 grid">
           <img
             src="https://plus.unsplash.com/premium_photo-1661281211518-7bc99840fe64?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -123,6 +123,12 @@ export default function Home() {
           </div>
         </section>
         <section>
+          <div>
+            <h2 className="text-3xl font-bold">Bất động sản nổi bật</h2>
+            <p className="text-sm text-desc">
+              Lựa chọn bất động sản ứng ý nhất với bạn
+            </p>
+          </div>
           <TabOutstanding />
         </section>
       </article>
