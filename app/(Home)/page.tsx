@@ -1,4 +1,5 @@
 import NavWhite from "@/components/Nav/NavWhite";
+import TabNew from "@/components/tabNav/TabNew";
 import TabOutstanding from "@/components/tabNav/TabOutstanding";
 import {
   faCaretDown,
@@ -107,7 +108,7 @@ export default function Home() {
             </h2>
             <div className="space-y-7">
               {resions.map((item, index) => (
-                <div className="flex gap-2">
+                <div className="flex gap-2" key={index}>
                   <p className="text-primary text-xl font-semibold">
                     {item.id}.
                   </p>
@@ -130,6 +131,20 @@ export default function Home() {
             </p>
           </div>
           <TabOutstanding />
+        </section>
+      </article>
+      <article className="bg-section-bg px-4 py-8">
+        <section>
+          <h2 className="text-3xl font-bold">Nhà đất mới nhất</h2>
+          <TabNew />
+        </section>
+        <section>
+          <h2 className="text-3xl font-bold">Căn hộ mới nhất</h2>
+          <TabNew />
+        </section>
+        <section>
+          <h2 className="text-3xl font-bold">Đất nền mới nhất</h2>
+          <TabNew />
         </section>
       </article>
     </main>

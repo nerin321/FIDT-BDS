@@ -13,6 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         primary: "#FA8F2C",
         secondary: "#F2291D",
+        "section-bg": "#F7F7F7",
         "banner-bg": "#032657",
         "button-bg": "#155AA9",
       },
