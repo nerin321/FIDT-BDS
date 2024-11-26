@@ -150,7 +150,7 @@ const TabOutstanding = () => {
         <TabPanels as={Fragment}>
           {/* items */}
           {tabList.categories.map((category) => (
-            <TabPanel>
+            <TabPanel key={category.id}>
               <div className="py-9 flex gap-5 overflow-x-scroll hide-scrollbar">
                 {category.featured.map((item, index) => (
                   <div>
