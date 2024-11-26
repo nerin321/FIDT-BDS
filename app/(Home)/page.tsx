@@ -1,3 +1,4 @@
+import MoreInfo from "@/components/moreInfo/MoreInfo";
 import NavWhite from "@/components/Nav/NavWhite";
 import TabNew from "@/components/tabNav/TabNew";
 import TabOutstanding from "@/components/tabNav/TabOutstanding";
@@ -95,7 +96,7 @@ export default function Home() {
           </div>
         </section>
       </article>
-      <article className=" px-4 py-10 space-y-14">
+      <article className=" px-4 py-10 space-y-14 lg:w-9/10 lg:mx-auto">
         <section className="lg:grid-cols-2 gap-7 grid">
           <img
             src="https://plus.unsplash.com/premium_photo-1661281211518-7bc99840fe64?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -133,18 +134,40 @@ export default function Home() {
           <TabOutstanding />
         </section>
       </article>
-      <article className="bg-section-bg px-4 py-8">
+      <article className="bg-section-bg px-4 py-8 ">
+        <div className="lg:w-9/10 lg:mx-auto">
+          <section>
+            <h2 className="text-3xl font-bold">Nhà đất mới nhất</h2>
+            <TabNew />
+          </section>
+          <section>
+            <h2 className="text-3xl font-bold">Căn hộ mới nhất</h2>
+            <TabNew />
+          </section>
+          <section>
+            <h2 className="text-3xl font-bold">Đất nền mới nhất</h2>
+            <TabNew />
+          </section>
+        </div>
+      </article>
+      <article>
         <section>
-          <h2 className="text-3xl font-bold">Nhà đất mới nhất</h2>
-          <TabNew />
-        </section>
-        <section>
-          <h2 className="text-3xl font-bold">Căn hộ mới nhất</h2>
-          <TabNew />
-        </section>
-        <section>
-          <h2 className="text-3xl font-bold">Đất nền mới nhất</h2>
-          <TabNew />
+          <MoreInfo />
+          <div className="p-4 bg-linear text-white ">
+            <div className="lg:w-9/10 lg:mx-auto lg:grid grid-cols-2 items-center space-y-5 lg:space-y-0">
+              <div className="space-y-3">
+                <h3 className="text-lg">Ký gửi bán độc quyền BĐS với FIDT</h3>
+                <p className="text-sm">
+                  Bán nhanh - Được giá - Phí hoa hồng theo thị trường
+                </p>
+              </div>
+              <div className="flex items-center justify-end">
+                <button className="p-2 text-lg bg-blue-700 rounded-lg">
+                  Tham khảo ngay
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
       </article>
     </main>

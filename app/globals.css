@@ -21,3 +21,11 @@ body {
 .hide-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+.bg-linear {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 155, 99, 1) 0%,
+    rgba(233, 111, 21, 1) 100%
+  );
+}
