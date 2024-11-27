@@ -15,6 +15,7 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { LogoWhite } from "@/public";
 
 const products = [
   {
@@ -56,11 +57,7 @@ export default function NavWhite() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
-              alt=""
-              src="https://fidt-bitrix24.s3.ap-southeast-1.amazonaws.com/landing/7a1/7a175667b30b5c866c7e906f792718fc/FIDT_Logo_new_1x_1x.png"
-              className="h-8 w-auto"
-            />
+            <img alt="" src={LogoWhite.src} className="h-8 w-auto" />
           </a>
         </div>
         <div className="flex lg:hidden">
